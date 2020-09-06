@@ -2,7 +2,7 @@ package start;
 
 import calc.*;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class start {
     public static void main(String[] args) {
@@ -19,6 +19,21 @@ public class start {
         for (int a : aaa) {
             System.out.println(a);
         }
+        Set set = new HashSet();
+        set.add("aaa");
+        set.add("bbb");
+        set.add("ccc");
+        set.add(123);
+        set.add(222.11);
+        set.add(123);
+        set.add("aaa");
+        System.out.println(set);
+
+        List arrayList = Arrays.asList(aaa);
+        for (int a : aaa) {
+            System.out.println(a);
+        }
+        System.out.println(arrayList.size());
     }
 }
 
