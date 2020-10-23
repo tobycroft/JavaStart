@@ -44,7 +44,7 @@ public class start {
             String sql = "select * from cq_user where id = ?";
             PreparedStatement pre = connection.prepareStatement(sql);
             pre.setInt(1, 1);
-            ResultSet result = pre.executeQuery(sql);
+            ResultSet result = pre.executeQuery();
             while (result.next()) {
                 System.out.println(result.getString("username"));
             }
